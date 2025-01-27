@@ -8,6 +8,7 @@
         const urls = [
             "https://droughtmonitor.unl.edu/",
             "https://droughtmonitor.unl.edu/Maps/ChangeMaps.aspx",
+	    "https://water.noaa.gov/gauges/memt1",
             "https://www.eia.gov/outlooks/steo/"
         ];
         let index = 0;
@@ -20,7 +21,7 @@
 
         window.onload = () => {
             switchIframe(); // 初始化加载第一个网站
-            setInterval(switchIframe, 10000); // 每 15 秒切换一次
+            setInterval(switchIframe, 5000); // Update every10 sec
         };
     </script>
     <style>
